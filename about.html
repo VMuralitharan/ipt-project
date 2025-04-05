@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            min-height: 100vh;
+            line-height: 1.6;
+            background-image: url('./img/1307513.jpg');
+            background-size: cover; 
+            background-attachment: fixed; 
+            background-position: center center; 
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+        }
+
+        .hero {
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px 40px;
+            border-radius: 10px;
+        }
+
+        .content-container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 0 auto; 
+            padding-top: 50px;
+        }
+
+        .about-section {
+            padding: 50px;
+            background: white;
+            text-align: center;
+            margin-top: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .about-section h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .about-section p {
+            font-size: 1.2rem;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .mission, .story, .since {
+            margin-top: 50px;
+        }
+        .mission h2, .story h2, .since h2 {
+            font-size: 2.2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .mission p, .story p, .since p {
+            font-size: 1.2rem;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .highlights {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+            text-align: center;
+        }
+        .highlight-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 28%;
+            transition: transform 0.3s;
+        }
+        .highlight-card:hover {
+            transform: scale(1.05);
+        }
+        .highlight-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .highlight-card h3 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .cta a {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #ff6200;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta a:hover {
+            background: #e55b00;
+        }
+        .footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .footlinks h4 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .footlinks ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footlinks ul li {
+      margin: 5px 0;
+    }
+
+    .footlinks ul li a {
+      text-decoration: none;
+      color: #ff6200;
+      transition: color 0.3s;
+    }
+
+    .footlinks ul li a:hover {
+      color: #e55b00;
+    }
+
+    .social {
+      margin-top: 10px;
+    }
+
+    .social a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 1.8rem;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    .social a:hover {
+      color: #ff6200;
+    }
+
+    .end {
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+          <a href="./index.html">Home</a>
+          <a class="nav-items active">About</a>
+          <a href="./explore.html">Explore</a>
+          <a href="./gallery.html">Gallery</a>
+          <a href="./contect.html">Contact </a>
+        </nav>
+      </header>
+    
+      <main>
+        <div class="hero">
+          <h1>Unveiling Sri Lanka's Wonders</h1>
+        </div>
+      
+        <div class="content-container">
+          <section class="about-section">
+            <h2>About Explore Sri Lanka</h2>
+            <p>Sri Lanka, often described as the "Pearl of the Indian Ocean", is a land of timeless beauty and vibrant diversity. With a history dating back over 2,500 years, the island is rich with ancient kingdoms, cultural heritage, and spiritual traditions that continue to thrive today.</p>
+            <p>From the majestic Sigiriya Rock Fortress to the sacred city of Kandy, and from sun-kissed beaches to the cool mist of tea-covered hills, Sri Lanka promises unforgettable adventures for every kind of traveler. Our mission at Explore Sri Lanka is to guide you through this remarkable journey, offering insight into its history, traditions, and natural wonders.</p>
+          </section>
+      
+          <section class="highlights">
+            <div class="highlight-card">
+              <img src="./img/sigiriya.jpg" alt="Cultural Heritage">
+              <h3>Cultural Heritage</h3>
+              <p>Discover UNESCO World Heritage Sites and timeless traditions that define the heart of Sri Lanka’s identity.</p>
+            </div>
+            <div class="highlight-card">
+              <img src="./img/Minneriya-National-Park-scaled.jpg" alt="Nature & Wildlife">
+              <h3>Nature & Wildlife</h3>
+              <p>Explore lush jungles, national parks, and wildlife sanctuaries home to elephants, leopards, and rare birds.</p>
+            </div>
+            <div class="highlight-card">
+              <img src="./img/whale.jpg" alt="Adventure Tourism">
+              <h3>Adventure Awaits</h3>
+              <p>Go whale watching, hike through mountains, or surf the waves—Sri Lanka is an adventurer’s dream destination.</p>
+            </div>
+          </section>
+      
+          <section class="mission about-section">
+            <h2>Why Sri Lanka?</h2>
+            <p>Positioned at a crossroads of ancient trade routes, Sri Lanka offers a mix of South Asian charm, colonial history, and modern vibrance. With friendly locals, safe cities, and diverse landscapes all within a few hours’ reach, it's one of the most accessible and enriching destinations in Asia.</p>
+          </section>
+      
+          <section class="story about-section">
+            <h2>Tourism That Tells a Story</h2>
+            <p>Each region of Sri Lanka carries a story—from the rainforests of Sinharaja to the historic city of Anuradhapura. At Explore Sri Lanka, we highlight not just the destinations, but the tales, legends, and people behind them—offering travelers more than a visit, but a connection.</p>
+          </section>
+      
+          <section class="since about-section">
+            <h2>Shaping Memories Since Day One</h2>
+            <p>Since our launch, we’ve helped thousands of travelers experience the charm of Sri Lanka. With carefully curated guides, responsible travel advice, and a passion for discovery, we’re proud to be a trusted companion for your island adventure.</p>
+          </section>
+        </div>
+      </main>
+      
+
+   
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./register.html">Register</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Connect with Us</h4>
+                <div class="social">
+                    <a href="https://web.facebook.com/vijayakumar.muralitharan?rdid=VRGKqt3np3MzM7nA&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F1BhB9UcQHB%2F%3F_rdc%3D1%26_rdr#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/vm_dharan/?igsh=ajRkZ213NGE1d3Fr#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-x"></i></a>
+                    <a href="www.linkedin.com/in/vijayakumar-muralitharan-03284a323" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/VMuralitharan" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="footlinks">
+                <h4>Contact</h4>
+                <p>Email: support@exploresrilanka.com</p>
+                <p>Phone: +94 71 234 5678</p>
+                <p>Address: Colombo, Sri Lanka</p>
+            </div>
+        </div>
+
+        <div class="end">
+            <p>Copyright © 2025 VM. All Rights Reserved.</p>
+        </div>
+    </footer>
+</html>

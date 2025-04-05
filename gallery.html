@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+   
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #f9f9f9;
+      font-family: sans-serif;
+      background-image: url('./img/1307513.jpg');
+            background-size: cover; 
+            background-attachment: fixed; 
+            background-position: center center; 
+    }
+
+    a {
+      text-decoration: none; 
+      color: inherit; 
+    }
+
+    header {
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0px 5%;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    nav a {
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      color: rgb(53, 53, 53);
+      width: 110px;
+      text-align: center;
+      padding: 15px 0;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .active {
+      background-color: #16423c;
+      color: white;
+    }
+
+    nav a:hover {
+      background-color: #16423c;
+      color: white;
+    }
+
+    nav:hover > a:not(:hover) {
+      background-color: transparent;
+      color: rgb(53, 53, 53);
+    }
+
+
+    .container {
+      padding: 5px 40px 40px 40px; 
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 20px 0;
+    }
+
+    .image-card {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .image-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .image-card img {
+      width: 100%;
+      height: 440px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      z-index: 1;
+    }
+
+    .image-card img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+      z-index: 10;
+    }
+
+    .image-name {
+      margin-top: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 50px;
+    }
+
+    .footlinks h4 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .footlinks ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footlinks ul li {
+      margin: 5px 0;
+    }
+
+    .footlinks ul li a {
+      text-decoration: none;
+      color: #ff6200;
+      transition: color 0.3s;
+    }
+
+    .footlinks ul li a:hover {
+      color: #e55b00;
+    }
+
+    .social {
+      margin-top: 10px;
+    }
+
+    .social a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 1.8rem;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    .social a:hover {
+      color: #ff6200;
+    }
+
+    .end {
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
+    .hero {
+      height: 40vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px 40px;
+      border-radius: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./explore.html">Explore</a>
+      <a class="nav-items active">Gallery</a>
+      <a href="./contect.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Discover the breathtaking beauty of Sri Lanka</h1>
+  </div>
+
+  <div class="container">
+    <div class="gallery">
+      <div class="image-card">
+        <img src="./img/Jaffna Fort.jpeg" alt="Image 1">
+        <div class="image-name">JAFFNA</div>
+      </div>
+      <div class="image-card">
+        <img src="./img/trinco.jpeg" alt="Image 2">
+        <div class="image-name">TRINCOMALEE</div>
+      </div>
+      <div class="image-card">
+        <img src="./img/Sri lanak  Colombo.jpeg" alt="Image 3">
+        <div class="image-name">COLOMBO</div>
+      </div>
+      <div class="image-card">
+        <img src="./img/ella.jpeg" alt="Image 4">
+        <div class="image-name">ELLA</div>
+      </div>
+      <div class="image-card">
+        <img src="./img/Galle Fort.jpeg" alt="Image 5">
+        <div class="image-name">GALLE</div>
+      </div>
+      <div class="image-card">
+        <img src="./img/ambuluwawa.jpeg" alt="Image 6">
+        <div class="image-name">AMBULUWAWA</div>
+      </div>
+      <div class="image-card">
+        <img src="./img/yala.jpeg" alt="Image 7">
+        <div class="image-name">YALA</div>
+      </div>
+      <div class="image-card">
+        <img src="./img/Sigiriya, Sri Lanka.jpeg" alt="Image 8">
+        <div class="image-name">SIGIRIYA</div>
+      </div>
+
+      <div class="image-card">
+        <img src="./img/Arugambay Beach.jpg" alt="Image 5">
+        <div class="image-name">ARUGAMBAY BEACH</div>
+      </div>
+      <div class="image-card">
+        <img src="./img/Gerandi Ella Falls.jpg" alt="Image 6">
+        <div class="image-name">GERANDI ELLA FALLS</div>
+      </div>
+      <div class="image-card">
+        <img src="./img/nine arch.jpg" alt="Image 7">
+        <div class="image-name">NINE ARCH BRIDGE</div>
+      </div>
+      <div class="image-card">
+        <img src="./img/Mirissa Beach.jpg" alt="Image 8">
+        <div class="image-name">MIRISSA BEACH</div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footlinks">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="./register.html">Register</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footlinks">
+        <h4>Connect with Us</h4>
+        <div class="social">
+            <a href="https://web.facebook.com/vijayakumar.muralitharan?rdid=VRGKqt3np3MzM7nA&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F1BhB9UcQHB%2F%3F_rdc%3D1%26_rdr#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/vm_dharan/?igsh=ajRkZ213NGE1d3Fr#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/Vm_dharan" target="_blank"><i class="fa-brands fa-x"></i></a>
+            <a href="www.linkedin.com/in/vijayakumar-muralitharan-03284a323" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/VMuralitharan" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </div>
+
+    <div class="footlinks">
+        <h4>Contact</h4>
+        <p>Email: support@exploresrilanka.com</p>
+        <p>Phone: +94 71 234 5678</p>
+        <p>Address: Jaffna, Sri Lanka</p>
+    </div>
+</div>
+
+<div class="end">
+    <p>Copyright © 2025 VM. All Rights Reserved.</p>
+</div>
+</footer>
+</body>
+</html>
